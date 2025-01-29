@@ -16,7 +16,9 @@
   },
   "scripts": {
     "lint": "standard",
-    "test": "standard && ava"
+    "test": "standard && ava",
+    "prepublish": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "keywords": [
     "yeoman-generator",
@@ -30,15 +32,16 @@
   "dependencies": {
     "underscore.string": "^3.0.3",
     "yeoman-environment": "^1.6.1",
-    "yeoman-generator": "^0.22.1"
+    "yeoman-generator": "^0.22.1",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
-    "ava": "^0.15.2",
+    "ava": "^4.0.0",
     "babel-eslint": "^5.0.0-beta6",
     "pify": "^2.2.0",
-    "standard": "^13.0.1",
+    "standard": "^13.1.0",
     "yeoman-assert": "^2.0.0",
-    "yeoman-test": "^1.0.0"
+    "yeoman-test": "^5.0.0"
   },
   "standard": {
     "parser": "babel-eslint",
@@ -49,5 +52,6 @@
   "coordinates": [
     45.5191807,
     -73.5789459
-  ]
+  ],
+  "snyk": true
 }

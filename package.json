@@ -37,7 +37,7 @@
     "babel-eslint": "^5.0.0-beta6",
     "pify": "^2.2.0",
     "standard": "^13.0.1",
-    "yeoman-assert": "^2.0.0",
+    "yeoman-assert": "^3.1.1",
     "yeoman-test": "^1.0.0"
   },
   "standard": {
